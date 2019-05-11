@@ -12,6 +12,8 @@ Pod::Spec.new do |spec|
   spec.source_files       = "XGPush/*.h","XGPush/Read.m"
   spec.vendored_libraries   = "XGPush/*.a"
   spec.xcconfig            = { "LIBRARY_SEARCH_PATHS" => "\"$(PODS_ROOT)/XGPush_Swift/**\"" }
+  spec.static_framework = true
+
 
 
   spec.prepare_command = <<-EOF
